@@ -20,7 +20,18 @@ const Dashboard = () => {
 	const [selected, setSelected] = useState(null);
 	return (
 		<LayoutWrapper>
-			<h2>Welcome back!</h2>
+			<h2 style={{
+				fontSize: "2.5rem",
+				marginBottom: "3rem",
+				background: "linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #4facfe 75%, #00f2fe 100%)",
+				WebkitBackgroundClip: "text",
+				WebkitTextFillColor: "transparent",
+				backgroundClip: "text",
+				fontWeight: "700",
+				letterSpacing: "1px",
+			}}>
+				🏋️ Welcome back! Let's crush those goals!
+			</h2>
 			<div style={{ display: "flex", gap: "2rem", flexWrap: "wrap" }}>
 				<div style={{ flex: 1, minWidth: 320 }}>
 					<WorkoutHistory workouts={demoWorkouts} onSelect={setSelected} />
